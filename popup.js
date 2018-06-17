@@ -1,5 +1,10 @@
-$('a').click(function(){
-    alert("You are going to open " + $(this).attr('href')+ "Be Aware");
+$('a').hover(function () {
+    $main_text = $(this).text();
+    $(this).text("Akshay");
+}, function () {
+    $(this).text($main_text);
 });
 
-//On hover change to another text.
+​$(".p").text(function () {
+    return $(this).text().replace("contains", "hello everyone");
+});​​​​​
